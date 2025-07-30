@@ -321,12 +321,12 @@ def main_process():
 
     # 📲 WhatsApp scheduled message
     elif "send whatsapp" in request:
-        pwk.sendwhatmsg("+918384038559", "Hello, this is a test message from Gyananjay's assistant.", 18, 12, 2)
+        pwk.sendwhatmsg("phone number", "Hello, this is a test message from Gyananjay's assistant.", 18, 12, 2)
 
     # ⚡ WhatsApp instant message
     elif "send message immediately" in request:
         pwk.sendwhatmsg_instantly(
-            "+919889076625", 
+            "phone number", 
             "Hello from Gyananjay's assistant !",
             wait_time=10,
             tab_close=True, 
